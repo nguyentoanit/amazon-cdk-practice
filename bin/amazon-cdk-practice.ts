@@ -1,6 +1,8 @@
 #!/usr/bin/env node
 import * as cdk from '@aws-cdk/core';
-import { AmazonCdkPracticeStack } from '../lib/amazon-cdk-practice-stack';
+import { AmazonCdkPracticeLambdaStack } from '../lib/amazon-cdk-practice-lambda-stack';
+import { AmazonCdkPracticeSNSStack } from '../lib/amazon-cdk-practice-sns-stack';
 
 const app = new cdk.App();
-new AmazonCdkPracticeStack(app, 'AmazonCdkPracticeStack');
+new AmazonCdkPracticeSNSStack(app, 'AmazonCdkPracticeSNSStack');
+new AmazonCdkPracticeLambdaStack(app, 'AmazonCdkPracticeLambdaStack')
