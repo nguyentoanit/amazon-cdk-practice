@@ -5,7 +5,6 @@ import {
   User,
 } from '@aws-cdk/aws-iam'
 
-
 export class AmazonCdkPracticeIAMStack extends Stack {
   constructor(scope: App, id: string, props?: StackProps) {
     super(scope, id, props)
